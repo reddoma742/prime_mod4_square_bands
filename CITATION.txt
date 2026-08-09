@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the associated paper."
+type: software
+title: "Differential Behaviour of Primes ≡1 and ≡3 (mod 4) Within Square-Layer Bands — Code and Data Repository"
+authors:
+  - family-names: Reddouane
+    given-names: Berramdane
+    email: reddoma@gmail.com
+    affiliation: Independent Researcher
+version: 0.1.0
+date-released: 2026-08-09
+repository-code: "https://github.com/reddoma/reddouane_2026_mod4-differential"
+license: MIT
+keywords:
+  - number theory
+  - prime numbers
+  - square layers
+  - modular arithmetic
+  - computational mathematics
+preferred-citation:
+  type: article
+  title: "Differential Behaviour of Primes ≡1 and ≡3 (mod 4) Within Square-Layer Bands"
+  authors:
+    - family-names: Reddouane
+      given-names: Berramdane
+  year: 2026
+  status: "in-preparation"
+  notes: "Update this block with the final journal/arXiv reference once published."
+references:
+  - type: article
+    title: "A Geometric Sieve for Composite Detection and an Empirical Constant in Prime Representations"
+    authors:
+      - family-names: Reddouane
+        given-names: Berramdane
+    year: 2026
+  - type: article
+    title: "Geometric and Arithmetic Properties of the n=2a±b Representation Network"
+    authors:
+      - family-names: Reddouane
+        given-names: Berramdane
+    year: 2026
