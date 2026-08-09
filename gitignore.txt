@@ -1,0 +1,31 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode/
+.idea/
+
+# Large regenerable outputs (keep committed CSVs in data/ intentionally;
+# uncomment below only if you want to regenerate rather than track them)
+# data/**/*.csv
+
+# Build artifacts for the paper (LaTeX)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
