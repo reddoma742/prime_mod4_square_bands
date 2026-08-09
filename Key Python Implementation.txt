@@ -1,0 +1,39 @@
+def count_minus_any(n: int) -> int:
+    """Count representations n = 2a - b where a,b in {1} U P"""
+    cnt = 0
+    for a in primes:
+        if a >= n: break
+        b = 2 * a - n
+        if b >= 1 and is_prime_or_one(int(b)):
+            cnt += 1
+    return cnt
+
+def count_plus_any(n: int) -> int:
+    """Count representations n = 2a + b where a,b in {1} U P"""
+    cnt = 0
+    for a in primes:
+        if 2 * a >= n: break
+        b = n - 2 * a
+        if b >= 1 and is_prime_or_one(int(b)):
+            cnt += 1
+    return cnt
+
+def geometric_primality_test(n: int) -> bool:
+    """Geometric primality test without trial division"""
+    if n < 3 or n % 2 == 0:
+        return False
+    r_minus = count_minus_any(n)
+    r_plus = count_plus_any(n)
+    scale = n / (math.log(n) ** 2)
+    sum_norm = (r_minus + r_plus) / scale
+    ratio = r_plus / r_minus if r_minus > 0 else float('inf')
+    
+    if sum_norm >= 2.1:
+        return False
+    if n % 4 == 1:
+        if not (1.18 <= ratio <= 1.35):
+            return False
+    else:
+        if not (1.10 <= ratio <= 1.25):
+            return False
+    return True
